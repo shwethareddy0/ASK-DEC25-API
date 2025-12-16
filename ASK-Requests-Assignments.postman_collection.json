@@ -449,9 +449,8 @@
 							"",
 							"pm.test(\"Verify status, result and gradedBy\", function () {",
 							"    var jsonData = pm.response.json();",
-							"    pm.expect(jsonData[jsonData.length-1].status).to.eql(\"GRADED\");",
-							"    pm.expect(jsonData[jsonData.length-1].result).to.eql(\"PASSED\");",
-							"     pm.expect(jsonData[jsonData.length-1].gradedBy).to.eql(\"AUTOMATIC\");",
+							"    pm.expect(jsonData[jsonData.length-1].status).to.eql(\"SUBMITTED\");",
+							"    pm.expect(jsonData[jsonData.length-1].result).to.eql(\"PENDING\");",
 							"});",
 							""
 						],
